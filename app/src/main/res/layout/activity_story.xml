@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="10dp"
+    tools:context=".StoryActivity">
+
+
+    <!--    Edit Text : Video Title-->
+<!--    <EditText-->
+<!--        android:id="@+id/titleEt"-->
+<!--        android:background="@color/white"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Enter Title"-->
+<!--        android:inputType="textPersonName|textCapSentences"-->
+<!--        android:padding="10dp"-->
+<!--        android:textColor="@color/black"/>-->
+
+    <!--    VideoView: display Video-->
+    <VideoView
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"/>
+
+    <!--    Button : upload Video-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/uploadVideoBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Video"
+        android:src="@drawable/ic_send"
+        android:layout_alignParentBottom="true"/>
+
+<!--    TextView: Comment box-->
+    <TextView
+        android:id="@+id/storyCommentTv"
+        android:layout_width="316dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+    <!--    FAB: send story-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/sendstoryFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_send"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+
+    <!--    FAB: pick video-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/pickVideoFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_video_call_24"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+
+
+
+</RelativeLayout>

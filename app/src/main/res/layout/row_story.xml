@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    app:contentPadding="3dp"
+    android:layout_marginTop="1dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/storyIv"
+            android:layout_width="66dp"
+            android:scaleType="centerCrop"
+            app:c_border_color="@color/colorPrimaryDark"
+            android:src="@drawable/ic_default_img"
+            android:layout_height="66dp"/>
+
+        <TextView
+            android:id="@+id/ProfilenameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="3dp"
+            android:text="Yash" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
